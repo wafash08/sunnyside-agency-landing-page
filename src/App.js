@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyles } from "./global";
+import { Burger, Menu } from "./components";
+import { useState } from "react";
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <div>
+        <Menu open={open} setOpen={setOpen} />
+        <Burger open={open} setOpen={setOpen} />
+      </div>
+    </>
   );
 }
 
