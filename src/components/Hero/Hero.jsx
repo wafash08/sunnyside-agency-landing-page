@@ -1,9 +1,16 @@
+import styled from "styled-components";
+
 const Hero = () => {
   return (
     <div>
-      <h1>Hero</h1>
+      <Bakcground />
     </div>
   );
 };
+
+const Bakcground = styled.div`
+  height: 100vh;
+  background-color: blue;
+`;
 
 export default Hero;
