@@ -1,0 +1,9 @@
+export { default as Burger } from "./Burger";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as ImageGallery } from "./ImageGallery";
+export { default as MenuDesktop } from "./MenuDesktop";
+export { default as MenuMobile } from "./MenuMobile";
+export { default as Service } from "./Service";
+export { default as Subservice } from "./SubService";
+export { default as Testimonial } from "./Testimonial";
